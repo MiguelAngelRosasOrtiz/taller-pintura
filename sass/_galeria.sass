@@ -1,0 +1,22 @@
+.galeria
+    .galeria__contenedor
+        display: flex
+        flex-wrap: wrap
+        background-color: #000000b0
+        .galeria__elemento
+            opacity: .5
+            transition: opacity .3s
+            overflow: hidden
+            flex: 0 0 calc(50%)
+            &:hover
+                opacity: 1
+                z-index: 2
+            img
+                vertical-align: middle
+                width: 100%
+                height: 100%
+@media (min-width: 768px)
+    .galeria
+        .galeria__contenedor
+            .galeria__elemento
+                flex: 0 0 calc(33.33%)

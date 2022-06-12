@@ -1,0 +1,72 @@
+$texto: #FAFBFD
+$principal: #011627
+$secundario: #4ce6d4
+$fuentePrincipal: 'Outfit', sans-serif 
+$fuenteSecundaria: arial
+html
+    font-size: 62.5%
+    box-sizing: border-box
+*
+    &::before,
+    &::after
+        box-sizing: inherit
+body
+    font-size: 1.6rem
+    font-family: $fuentePrincipal
+    color: $texto
+    background-color: $principal
+    h1
+        color: $secundario
+        font-size: 3.7rem
+    h1,h2,h3
+        text-align: center
+    h2
+        color: $secundario
+        font-size: 3rem
+    h3
+        color: $secundario
+        font-size: 2.5rem
+    a
+        text-decoration: none
+        font-family: $fuenteSecundaria
+        color: $texto
+        text-align: center
+        &:hover
+            color: $secundario
+    p
+        font-family: $fuenteSecundaria
+        font-weight: bold
+    p,a
+        text-align: center
+    li
+        font-weight: bold
+    span
+            color: $secundario
+img
+    max-width: 100%
+.contenedor
+    width: 90%
+    margin: 0 auto
+.margin-seccion
+    margin: 3rem 0
+.padding-contenedor
+    padding: 2rem 0
+.bd-top
+    border-top: solid $texto 1px
+.transform
+    transition: transform .3s ease
+    &:hover
+    transform: scale(1.3rem)
+        
+@media (min-width: 768px)
+    body
+        h1
+            font-size: 4.3rem
+        h2
+            font-size: 3rem
+        p,a
+            font-size: 2rem
+    .contenedor
+        width: 80%
+        margin: 0 auto
+        

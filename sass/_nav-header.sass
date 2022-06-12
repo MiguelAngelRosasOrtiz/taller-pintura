@@ -1,0 +1,41 @@
+.navegacion
+    display: flex
+    justify-content: center
+    .contenedor-nav
+        width: 99%
+        padding: 2rem
+        display: flex
+        justify-content: space-around
+        a
+            transition: transform .3s ease, color .3s ease-out
+            &:hover
+                transform: scale(1.2)
+// header
+.encabezado
+    .encabezado__contenedor
+        .encabezado__logo
+            text-align: center
+            img
+                width: 60%
+        .encabezado__elemento
+            h2
+                color: $texto
+@media (min-width: 768px)
+    .navegacion
+        .contenedor-nav
+            width: 65%
+    .encabezado
+        height: 40rem
+        display: flex
+        align-items: center
+        .encabezado__contenedor
+            display: flex
+            align-items: center
+            .encabezado__logo
+                flex: 0 0 calc(50%)
+                img
+                    width: 80%
+                    max-width: 100%
+            .encabezado__texto
+                flex: 0 0 calc(50%)
+                    

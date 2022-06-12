@@ -1,0 +1,31 @@
+.contacto
+    .contacto__telefonos
+        text-align: center
+        margin-bottom: 2rem
+        .contacto__enlaces
+            a
+                display: inline-block
+                background-color: $secundario
+                color: $principal
+                padding: 2rem 2rem
+                width: 19rem
+                margin-bottom: 1rem
+                font-weight: bold
+                border-radius: 1rem
+    .contacto__ubicacion
+        width: 90%
+@media (min-width: 768px)
+    .contacto
+        .contacto__telefonos
+            .contacto__enlaces
+                display: flex
+                justify-content: space-between
+                width: 90%
+                margin: 0 auto
+                a
+                    flex: 0 0 calc(50% - 2rem)
+                    margin-bottom: 0rem
+                    padding: 2rem 0rem
+        .contacto__ubicacion
+            width: 100%
+            background-color: #fff
